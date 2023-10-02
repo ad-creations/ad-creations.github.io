@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Contact Page</title>
+        <link rel="stylesheet" href = "./css/styles.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init(NBl3SSRSoVUKke5-o);
+            })();
+        </script>
+    </head>
+    <header>
+        <ul>
+            <li><a class = "active" href="index.html">Home</a></li>
+            <li><a href = "https://mattm401.github.io/">Class page</a></li>
+            <li><a href  = "https://mghansen1.github.io/">Next Student</a></li>
+            <li><a href  = "https://hkaur02.github.io/">Previous Student</a></li>
+            <li ><a href = "https://ad-creations.github.io/aboutMe.html">About Me</a></li>
+            <li style="float: right"><a href = "contact.html">Contact Me</a></li>
+        </ul>
+    </header>
+    <body>
+        <form id ="contactPage">
+            <div class = "contact-content">
+                <p class = "p-form">Fill out the information below</p>
+
+                
+                <textarea id="user_lastName" placeholder="Last Name"></textarea>
+                <div id ="lastNameError" class="error-message"></div>
+
+                <textarea id="user_firstName" placeholder="First Name"></textarea>
+                <div id ="firstNameError" class="error-message"></div>
+
+                <textarea id="user_email" placeholder="Email"></textarea>
+                <div id ="emailError" class="error-message"></div>
+                <div class="error-msg" id= "email-error"></div>
+
+                <textarea id="user_phone" placeholder="Phone Number"></textarea>
+                <div id ="phoneError" class="error-message"></div>
+                <div class="error-msg" id= "phone-error"></div>
+
+                <textarea class = "emailMsg" id="user_msg" placeholder="Short Mesage Here..."></textarea>
+                <div id ="msgError" class="error-message"></div>
+
+                <div class="button-container">
+                    <button class = "msg" id ="sendEmail">Send</button>
+                </div>
+
+            </div>
+        </form>
+        <script src = './src/contact.js'></script>
+    </body>
+</html>
