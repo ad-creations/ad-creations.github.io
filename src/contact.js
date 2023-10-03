@@ -40,7 +40,7 @@ if(lastName === "" || firstName === "" || !emailPattern.test(email) || email ===
         user_phoneNum: user_phoneNum,
         user_message: user_msg,
     };
-    emailjs.send("service_aqfvwff", "template_wcgj866", contactParameters)
+    emailjs.send("service_aqfvwff", "template_wcgj866", contactParameters);
 }
 
 

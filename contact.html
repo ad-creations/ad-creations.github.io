@@ -3,30 +3,30 @@
     <head>
         <title>Contact Page</title>
         <link rel="stylesheet" href = "./css/styles.css">
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script>
             (function() {
-                // https://dashboard.emailjs.com/admin/account
                 emailjs.init(NBl3SSRSoVUKke5-o);
             })();
         </script>
     </head>
-    <header>
-        <ul>
-            <li><a class = "active" href="index.html">Home</a></li>
-            <li><a href = "https://mattm401.github.io/">Class page</a></li>
-            <li><a href  = "https://mghansen1.github.io/">Next Student</a></li>
-            <li><a href  = "https://hkaur02.github.io/">Previous Student</a></li>
-            <li ><a href = "https://ad-creations.github.io/aboutMe.html">About Me</a></li>
-            <li style="float: right"><a href = "contact.html">Contact Me</a></li>
-        </ul>
-    </header>
+    
     <body>
+        <header>
+            <ul>
+                <li><a class = "active" href="index.html">Home</a></li>
+                <li><a href = "https://mattm401.github.io/">Class page</a></li>
+                <li><a href  = "https://mghansen1.github.io/">Next Student</a></li>
+                <li><a href  = "https://hkaur02.github.io/">Previous Student</a></li>
+                <li ><a href = "https://ad-creations.github.io/aboutMe.html">About Me</a></li>
+                <li style="float: right"><a href = "contact.html">Contact Me</a></li>
+            </ul>
+        </header>
         <form id ="contactPage">
             <div class = "contact-content">
                 <p class = "p-form">Fill out the information below</p>
 
-                
+
                 <textarea id="user_lastName" placeholder="Last Name"></textarea>
                 <div id ="lastNameError" class="error-message"></div>
 
